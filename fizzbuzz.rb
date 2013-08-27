@@ -7,69 +7,54 @@
 require 'rspec'
 
 
-class Burger
-  attr_reader :options
+# class Burger
+#   attr_reader :options
  
-  def initialize(options={})
-    @options = options
-  end
+#   def initialize(options={})
+#     @options = options
+#   end
  
-  def apply_ketchup
-    @ketchup = @options[:ketchup]
-  end
+#   def apply_ketchup
+#     @ketchup = @options[:ketchup]
+#   end
  
-  def has_ketchup_on_it?
-    @ketchup
-  end
-end
+#   def has_ketchup_on_it?
+#     @ketchup
+#   end
+# end
  
  
-describe Burger do
-  describe "#apply_ketchup" do
-    subject { burger }
-    before  { burger.apply_ketchup }
- 
-    context "with ketchup" do
-      let(:burger) { Burger.new(:ketchup => true) }
- 
-      it { should have_ketchup_on_it }
-    end
- 
-    context "without ketchup" do
-      let(:burger) { Burger.new(:ketchup => false) }
- 
-      it { should_not have_ketchup_on_it }
-    end
-  end
-end
-
 
 
 
 
 # VERSION 3
 
-# class Rspec_test
+class Rspec_test
 
-# 	def divisible_by_3?(n)
-# 		n % 3 == 0
-# 	end
+	def divisible_by_3?(n)
+		n % 3 == 0
+	end
 
-# 	def divisible_by_5?(n)
-# 		n % 5 == 0
-# 	end
+	def divisible_by_5?(n)
+		n % 5 == 0
+	end
+end
 
 
-# (0..100).each do |n|
-# 	if divisible_by_3?(n) && divisible_by_5?(n)
-# 		puts "FizzBuzz"
-# 	elsif divisible_by_3?(n)
-# 		puts "Fizz"
-# 	elsif divisible_by_5?(n)
-# 		puts "Buzz"
-# 	else puts n
-# 	end
-# end
+
+	(0..100).each do |n|
+		if divisible_by_3?(n) && divisible_by_5?(n)
+			puts "FizzBuzz"
+		elsif divisible_by_3?(n)
+			puts "Fizz"
+		elsif divisible_by_5?(n)
+			puts "Buzz"
+		else puts n
+		end
+	end
+
+
 
 
 # VERSION 1
