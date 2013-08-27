@@ -21,6 +21,9 @@ end
 
 
 
+# commands
+
+
 	(0..100).each do |n|
 		if divisible_by_3?(n) && divisible_by_5?(n)
 			puts "FizzBuzz"
